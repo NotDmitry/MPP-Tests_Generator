@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
@@ -74,7 +67,7 @@ public class Generator
         return result;
     }
 
-    public ClassDeclarationSyntax GenerateClass(ClassDeclarationSyntax srcClass)
+    private ClassDeclarationSyntax GenerateClass(ClassDeclarationSyntax srcClass)
     {
         // Class attribute
         var attribute = SingletonList(AttributeList(
@@ -96,7 +89,7 @@ public class Generator
     }
 
 
-    public List<MemberDeclarationSyntax> GenerateMethods(ClassDeclarationSyntax testClass)
+    private List<MemberDeclarationSyntax> GenerateMethods(ClassDeclarationSyntax testClass)
     {
         List<MemberDeclarationSyntax> resultMethods = new List<MemberDeclarationSyntax>();
 
