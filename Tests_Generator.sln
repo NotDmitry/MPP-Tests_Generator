@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests_Generator.Core", "Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Generator.Example", "Test_Generator.Example\Test_Generator.Example.csproj", "{6C62EB16-6A89-47F6-BE97-1400EA82CB7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Generator.Tests", "Test_Generator.Tests\Test_Generator.Tests.csproj", "{92B55101-6FE6-4609-B8E2-6EEB69A6EE11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6C62EB16-6A89-47F6-BE97-1400EA82CB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C62EB16-6A89-47F6-BE97-1400EA82CB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C62EB16-6A89-47F6-BE97-1400EA82CB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92B55101-6FE6-4609-B8E2-6EEB69A6EE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B55101-6FE6-4609-B8E2-6EEB69A6EE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B55101-6FE6-4609-B8E2-6EEB69A6EE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B55101-6FE6-4609-B8E2-6EEB69A6EE11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

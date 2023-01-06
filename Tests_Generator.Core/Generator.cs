@@ -37,6 +37,7 @@ public class Generator
             .Add(UsingDirective(ParseName("System.Text")))
             .Add(UsingDirective(ParseName("System.Threading.Tasks")))
             .Add(UsingDirective(ParseName("Microsoft.VisualStudio.TestTools.UnitTesting")));
+        var wdAdditionalUsings = new SyntaxList<UsingDirectiveSyntax>(additionalUsings.Distinct().ToList<UsingDirectiveSyntax>());
 
         foreach (var publicClass in publicClasses)
         {
@@ -52,7 +53,7 @@ public class Generator
                 ParseName(namespaceName.ToFullString() + ".Tests"));
 
             var resultCode = CompilationUnit()
-                .WithUsings(additionalUsings
+                .WithUsings(wdAdditionalUsings
                     .Add(UsingDirective(ParseName(namespaceName.ToString()))))
                 .WithMembers(
                     SingletonList<MemberDeclarationSyntax>(namespaceMember

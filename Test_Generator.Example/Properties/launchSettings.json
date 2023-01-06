@@ -2,7 +2,7 @@
   "profiles": {
     "Test_Generator.Example": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Dima\\TestSrc"
+      "commandLineArgs": "\"C:\\Dima\\Visual Studio Repository\\MPP\\MPP-Tests_Generator\\Test_Generator.Tests\\Classes\""
     }
   }
 }
