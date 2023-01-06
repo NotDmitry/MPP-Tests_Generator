@@ -125,8 +125,11 @@ public class Generator
                     .WithModifiers(modifier)
                     .WithBody(body));
 
-                if (adding != string.Empty) 
+                if (adding != string.Empty)
+                {
                     i++;
+                    adding = i.ToString();
+                }
             }
         }
 
